@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>3 Frames using Iframe</title>
+</head>
+
+<body>
+
+<h2 align="center">Three Frames Example</h2>
+
+<!-- Frame 1 -->
+<iframe id="frame1" width="100%" height="200" frameborder="1"></iframe>
+
+<br><br>
+
+<!-- Frame 2 -->
+<iframe id="frame2" width="100%" height="200" frameborder="1"></iframe>
+
+<br><br>
+
+<!-- Frame 3 -->
+<iframe id="frame3" width="100%" height="200" frameborder="1"></iframe>
+
+<script>
+frame1.contentDocument.write(
+"<h3 align='center'>Taj Mahal Image</h3><center><img src='https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg' width='250' height='150'></center>"
+);
+
+frame2.contentDocument.write(
+"<h3>About Taj Mahal</h3><p>The Taj Mahal is a famous monument in Agra, India. It was built by Shah Jahan in memory of Mumtaz Mahal.</p>"
+);
+
+frame3.contentDocument.write(
+"<h3 align='center'>More Information</h3><center><a href='https://en.wikipedia.org/wiki/Taj_Mahal' target='_blank'>Click here to learn more</a></center>"
+);
+</script>
+
+</body>
+</html>
