@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Taj Mahal - 3 Frames</title>
+    <title>Three Frames Example</title>
 </head>
 
 <body>
@@ -9,20 +9,40 @@
 <center>
     <h2>Taj Mahal</h2>
 </center>
-<iframe src="https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg"
-        width="100%" height="250">
+
+<iframe width="100%" height="180"
+srcdoc="
+<center>
+<h3>Taj Mahal Image</h3>
+<img src='https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg' width='200' height='120'>
+</center>
+">
 </iframe>
 
 <br><br>
 
-<iframe src="https://en.wikipedia.org/wiki/Taj_Mahal"
-        width="100%" height="300">
+<iframe width="100%" height="200"
+srcdoc="
+<h3>About Taj Mahal</h3>
+<p>
+The Taj Mahal is a famous monument in Agra, India.
+It was built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal.
+It is one of the Seven Wonders of the World.
+</p>
+">
 </iframe>
 
 <br><br>
 
-<iframe src="https://www.britannica.com/topic/Taj-Mahal"
-        width="100%" height="300">
+<iframe width="100%" height="120"
+srcdoc="
+<center>
+<h3>More Information</h3>
+<a href='https://en.wikipedia.org/wiki/Taj_Mahal' target='_blank'>
+Click here to learn more
+</a>
+</center>
+">
 </iframe>
 
 </body>
